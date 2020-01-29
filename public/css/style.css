@@ -1,25 +1,47 @@
+/*
+Fontes 
+*/
+@font-face{
+    font-family: 'SubTitulo';
+    src: url('../roboto/Roboto-Thin.woff');
+}
+@font-face{
+    font-family: 'Titulo';
+    src: url('../roboto/Roboto-Light.woff');
+}
+/*
+
+Fontes 
+
+*/
 *{
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'SubTitulo';
 }
+
 body {
     background-image: url('../background.png');
     background-repeat: no-repeat;
-    background-color: #f509095e;
     color: rgba(21, 111, 119, 0.534);
     margin-top: 0;
     padding: 1px;
 }
 #body{
-    background-color: #ff00008a;
+   /* background-color: #ff00008a;*/
     height: 100%;
+ 
 }
 #header {
-    background-color: cornflowerblue;
-    position: absolute;
+  
+    display: flex;
+    align-content: center;
 }
+
 #fa-ap {
+    font-family: 'Titulo' ;
     background-color: aliceblue;
     align-content: center;
     width: 500px;
@@ -45,7 +67,7 @@ body {
 
 .button-up {
     background-color: rgba(21, 111, 119, 0.452);
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(21, 111, 119);
     border-radius: 90px;
     height: 100px;
     width: 100px;
@@ -53,13 +75,37 @@ body {
     margin-left: auto;
     margin-top: 236px;
     position: relative;
+    z-index: 1;
 }
+
 .button-up i {
     font-size: 50px; 
     position: absolute; 
     top: 25px; 
     left: 25px;
-    color: rgba(21, 111, 119, 0.534);
+    color: rgb(21, 111, 119);
+    z-index: 0;
+}
+.button-upp {
+    background-color: rgba(55, 103, 119, 1);
+    border: 2px solid rgb(115, 163, 179);
+    border-radius: 90px;
+    height: 100px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 236px;
+    position: relative;
+    top: 174px;
+    z-index: 1;
+}
+
+.button-upp i {
+    font-size: 50px; 
+    position: absolute; 
+    top: 25px; 
+    left: 25px;
+    color: rgb(145, 193, 209);
     z-index: 0;
 }
 .button-down i {
@@ -69,6 +115,9 @@ body {
     left: 25px;
     color: rgba(21, 111, 119, 0);
     z-index: 1;
+}
+.cont-git {
+    display: inline;
 }
 @keyframes animacao-caixa {
     from {
@@ -83,16 +132,17 @@ body {
         position: relative;
     }
     to {
-        background-size: 300px;
+        background-size: 200px;
         background-repeat: no-repeat;
         background-position: center;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 210px;
         height: 250px;
         width: 250px;
+        top : 174px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 100px;
+        margin-top: 164px;
         position: relative;
     }
 }
@@ -101,14 +151,96 @@ body {
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 210px;
     height: 250px;
     width: 250px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 186px;
     position: relative;
+    top : 164px;
     animation-name: animacao-caixa;
     animation-duration: 5s;
+}
+
+
+/* Minhas informção */
+#cont {
+    background-color: rgb(191, 216, 229);
+    padding: 200px 50px 10px 50px;
+    display: flex;
+}
+#cont .left{
+    width: 500px;
+    color : rgb(115, 163, 179);
+    margin-right: 10px;
+}
+#cont .left p{
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+   font-style: oblique;
+}
+#cont .left p strong{
+    font-weight: bold;
+}
+#cont .left h1 {
+    padding: 5px;
+    font-size: 30px;
+}
+/*Mais informação direito */
+#cont .reigt{
+    width: 500px;
+    color : rgb(115, 163, 179);
+    margin-right: 10px;
+}
+#cont .reigt .ft{
+    display: flexbox;
+    flex-direction: column;
+}
+#cont .reigt .ft {
+    margin: 5px;
+    display: flexbox;
+    flex-direction: column;
+}
+#cont .reigt .ft .sft{
+    height: 52px;
+    display: flex;
+    margin: 0px;
+    border-bottom: 1px solid rgb(98, 161, 174);
+}
+#cont .reigt .ft .sft p{
+    font-size: 20px;
+    padding: 10px;
+    
+}
+#cont .reigt .ft .sft div{
+    width: 50px;
+    position: relative;
+    background-color: rgb(98, 161, 174);
+}
+
+#cont .reigt .ft .sft i {
+    font-size: 30px;
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    color: rgb(221, 234, 237);
+}
+#cont .reigt .ft .sft .eqr{
+    width: 50px;
+    position: relative;
+    background-color: rgb(221, 234, 237);
+}
+#cont .reigt .ft .sft .eqr i {
+    font-size: 30px;
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    color: rgb(98, 161, 174);
+}
+#cont .reigt .ft .sft .nm {
+    width: 388px;
+    background: rgb(232, 243, 246);
 }
