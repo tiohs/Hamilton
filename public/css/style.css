@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-image: url('../background.png');
+    background-repeat: no-repeat;
+    background-color: #f509095e;
+    color: rgba(21, 111, 119, 0.534);
+    margin-top: 0;
+    padding: 1px;
+}
+#body{
+    background-color: #ff00008a;
+    height: 100%;
+}
+#header {
+    background-color: cornflowerblue;
+    position: absolute;
+}
+#fa-ap {
+    background-color: aliceblue;
+    align-content: center;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 257px;
+    height: 100px;
+    position: relative;
+    border-radius: 5px;
+}
+#fa-ap p {
+    position: absolute;
+    top: 28px;
+    left: 50px;
+    font-size: 36px;
+}
+#fa-ap i {
+    font-size: 25px; 
+    position: absolute; 
+    top: 3px; 
+    right: 3px;
+}
+
+.button-up {
+    background-color: rgba(21, 111, 119, 0.452);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 90px;
+    height: 100px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 236px;
+    position: relative;
+}
+.button-up i {
+    font-size: 50px; 
+    position: absolute; 
+    top: 25px; 
+    left: 25px;
+    color: rgba(21, 111, 119, 0.534);
+    z-index: 0;
+}
+.button-down i {
+    font-size: 50px; 
+    position: absolute; 
+    top: 25px; 
+    left: 25px;
+    color: rgba(21, 111, 119, 0);
+    z-index: 1;
+}
+@keyframes animacao-caixa {
+    from {
+        background-color: rgba(21, 111, 119, 0.452);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 90px;
+        height: 100px;
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+        position: relative;
+    }
+    to {
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 210px;
+        height: 250px;
+        width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+        position: relative;
+    }
+}
+.button-down {
+    background-image: url('../79509414_2781078612119003_7081528428238733312_n.jpg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 210px;
+    height: 250px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    position: relative;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+}
