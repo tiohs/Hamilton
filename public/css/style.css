@@ -64,7 +64,34 @@ body {
     top: 3px; 
     right: 3px;
 }
-
+@keyframes animacao-caixa1 {
+    from { background-image: url('../79509414_2781078612119003_7081528428238733312_n.jpg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 210px;
+    height: 250px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 186px;
+    position: relative;
+    top : 164px;
+    }
+    to {
+    background-color: rgba(21, 111, 119, 0.452);
+    border: 1px solid rgb(21, 111, 119);
+    border-radius: 90px;
+    height: 100px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 236px;
+    position: relative;
+    }
+   
+}
 .button-up {
     background-color: rgba(21, 111, 119, 0.452);
     border: 1px solid rgb(21, 111, 119);
@@ -76,6 +103,8 @@ body {
     margin-top: 236px;
     position: relative;
     z-index: 1;
+    animation-name: animacao-caixa1;
+    animation-duration: 0.5s;
 }
 
 .button-up i {
@@ -119,6 +148,7 @@ body {
 .cont-git {
     display: inline;
 }
+
 @keyframes animacao-caixa {
     from {
         background-color: rgba(21, 111, 119, 0.452);
@@ -132,7 +162,7 @@ body {
         position: relative;
     }
     to {
-        background-size: 200px;
+        background-size: 300px;
         background-repeat: no-repeat;
         background-position: center;
         border: 1px solid rgb(255, 255, 255);
@@ -161,7 +191,7 @@ body {
     position: relative;
     top : 164px;
     animation-name: animacao-caixa;
-    animation-duration: 5s;
+    animation-duration: 0.5s;
 }
 
 
@@ -243,4 +273,31 @@ body {
 #cont .reigt .ft .sft .nm {
     width: 388px;
     background: rgb(232, 243, 246);
+}
+/*
+Habilidades 
+*/
+#skill {
+    color : white;
+    background-color: rgb(65, 121, 130);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#skill .center {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#skill .header h{
+    font-family: 'Titulo';
+    margin: 2px;
+}
+#skill .header {
+    font-family: 'SubTitulo';
+    text-align: center;
+}
+#skill .box {
+    background-color: rgb(52, 106, 112);
+    width: 1000px;
 }

@@ -26,7 +26,7 @@
                         app.y = 1;
                         $('.app-do-up').removeClass('button-up');
                         $('.app-do-up').addClass('button-down');
-                    } else if (win.scrollY < 70 && app.y == 1) {
+                    } else if (win.scrollY < 137 && app.y == 1) {
                         app.y = 0;
                         $('.app-do-up').removeClass('button-down');
                         $('.app-do-up').addClass('button-up');
