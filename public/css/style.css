@@ -289,15 +289,95 @@ Habilidades
     margin-left: auto;
     margin-right: auto;
 }
-#skill .header h{
+#skill .header h1{
     font-family: 'Titulo';
     margin: 2px;
+}
+#skill .header h2{
+    font-family: 'SubTitulo';
+    margin: 2px;
+    margin-right: auto ;
+    margin-left: auto ;
+    font-size: 20px;
 }
 #skill .header {
     font-family: 'SubTitulo';
     text-align: center;
+    color: rgb(226, 239, 240);
 }
+
 #skill .box {
     background-color: rgb(52, 106, 112);
-    width: 1000px;
+    width: 900px;
+}
+#skill .cod .corp {
+    border-top: 1px solid rgb(65, 121, 130);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+} 
+#skill .cod .corp .list {
+    display: flex;
+    flex-flow: wrap;
+}
+#skill .cod .corp .subT{
+    color : rgb(115, 163, 179);
+}
+#skill .cod .corp .list div {
+    width: 200px;
+    margin-top: 5px;
+    padding: 10px;
+  
+}
+#skill .cod .lgua .graf{
+    background-color: rgb(83, 110, 114);
+   margin: 0px;
+    width: 300px;
+    padding: 1px;
+}
+#skill .cod .lgua .grafni{
+    background-color: rgb(139, 139, 139);
+    width: 300px;
+    height: 15px;    
+    margin: 0px;  
+}
+#skill .cod .lgua .grafni1{
+    background-color: rgb(139, 139, 139);
+    width: 180px;
+    height: 15px;    
+    margin: 0px;  
+}
+#skill .cod .lgua .grafni2{
+    background-color: rgb(139, 139, 139);
+    width: 27px;
+    height: 15px;    
+    margin: 0px;  
+}
+
+#skill .cod .lgua {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    text-align: center;
+}
+#skill .cod .lgua div{
+    margin: 10px 10px 10px 30px;
+}
+#skill .cod .lgua h1{
+    font-size: 20px;
+}
+#skill .cod .lgua .hw {
+    width: 90px;
+    text-align: start;
+}
+#skill .cod .lgua .ew {
+    width: 320px;
+    text-align: start;
+    
+}
+#skill .cod .lgua p{
+    padding: 1px;
+    font-size: 14px;
+    
 }
