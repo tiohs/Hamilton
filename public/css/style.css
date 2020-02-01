@@ -283,6 +283,7 @@ Habilidades
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2px;
 }
 #skill .center {
     margin-top: 2px;
