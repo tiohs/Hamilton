@@ -382,3 +382,127 @@ Habilidades
     font-size: 14px;
     
 }
+/*
+     Experence 
+*/
+#experence {
+    background-color: rgb(231, 238, 238);
+}
+#experence .center {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#experence .header h1{
+    font-family: 'Titulo';
+    margin: 2px;
+}
+#experence .header h2{
+    font-family: 'SubTitulo';
+    margin: 2px;
+    margin-right: auto ;
+    margin-left: auto ;
+    font-size: 20px;
+}
+#experence .header {
+    font-family: 'SubTitulo';
+    text-align: center;
+    color: rgb(65, 121, 130);
+}
+#experence h1{
+    font-family: 'SubTitulo';
+   
+    color: rgb(65, 121, 130);
+}
+#experence div {
+    width: 900px;
+}
+#experence .corp{
+    margin: 2px;
+    width: 800px;
+    margin: 0 auto;
+    color : black;
+    border-bottom: 1px solid rgb(65, 121, 130);
+}
+#experence .corp1 div {
+
+    padding: 5px;
+}
+#experence .corp1{
+    display: flex;
+    width: 700px;
+}
+#experence .corp1 h2 {
+    font-size: 16px;
+    color :rgb(83, 110, 114);
+}
+/*
+Porjeto
+*/
+#proj {
+    background-color: rgb(65, 121, 130);
+}
+#proj .center {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#proj .header h1{
+    font-family: 'Titulo';
+    margin: 2px;
+}
+#proj .header h2{
+    font-family: 'SubTitulo';
+    margin: 2px;
+    margin-right: auto ;
+    margin-left: auto ;
+    font-size: 20px;
+}
+#proj .header {
+    font-family: 'SubTitulo';
+    text-align: center;
+    color: rgb(226, 239, 240);
+}
+#proj .all {
+    width: 700px;
+    margin: 0px auto;
+}
+#proj .all div{
+    width: 200px;
+}
+#proj image{
+    width: 200px;
+    height: 200px;
+}
+#proj .all .buttons{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+#proj .all .buttons button {
+    height: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+#proj i {
+    font-size: 20px; 
+}
+#proj .all .buttons button:hover i {
+    transform: translateY(-5px);
+    transition: all .2s;
+}
+
+.match-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+   
+}
+/*
+*/
