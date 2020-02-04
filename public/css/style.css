@@ -441,6 +441,7 @@ Porjeto
 */
 #proj {
     background-color: rgb(65, 121, 130);
+    width: 1280px;
 }
 #proj .center {
     margin-top: 2px;
@@ -463,38 +464,44 @@ Porjeto
     text-align: center;
     color: rgb(226, 239, 240);
 }
-#proj .all {
-    width: 700px;
-    margin: 0px auto;
+
+#all-project {
+    width: 900px;
+    
+    margin : 0 auto;
+    display: flex;
+    flex-direction: column;
 }
-#proj .all div{
-    width: 200px;
+#all-project .img {
+    width: 900px;
+    height: 300px;
 }
-#proj image{
-    width: 200px;
-    height: 200px;
+#all-project .corp {
+    position: relative;
+  
 }
-#proj .all .buttons{
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+#all-project .corp .buttons{
+    position : absolute;
+    top : 100px;
+    right: 2px;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 31, 31, 0.335);
 }
-#proj .all .buttons button {
-    height: 50px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    background-color: #FFF;
-    cursor: pointer;
+#all-project .corp .buttons i{
+    margin: 10px;
+    font-size: 26px;
+    color: rgba(65, 121, 130, 0.568);
 }
-#proj i {
-    font-size: 20px; 
-}
-#proj .all .buttons button:hover i {
+#all-project .corp .buttons i:hover{
     transform: translateY(-5px);
     transition: all .2s;
+    margin: 10px;
+    font-size: 26px;
+    color: rgb(65, 121, 130);
 }
-
+/*
 .match-container {
     position: absolute;
     top: 0;
@@ -504,5 +511,4 @@ Porjeto
     display: flex;
    
 }
-/*
 */
