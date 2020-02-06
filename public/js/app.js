@@ -30,6 +30,7 @@
                         app.y = 0;
                         $('.app-do-up').removeClass('button-down');
                         $('.app-do-up').addClass('button-up');
+                        
                     }
                 });
             }

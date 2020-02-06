@@ -467,18 +467,18 @@ Porjeto
 
 #all-project {
     width: 900px;
-    
     margin : 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
 }
 #all-project .img {
-    width: 900px;
+    width: 300px;
     height: 300px;
 }
 #all-project .corp {
     position: relative;
-  
+    width: 300px;
+    margin: 0px;
 }
 #all-project .corp .buttons{
     position : absolute;
@@ -500,6 +500,61 @@ Porjeto
     margin: 10px;
     font-size: 26px;
     color: rgb(65, 121, 130);
+}
+#Cont {
+    background-color: rgb(191, 216, 229);
+    
+}
+
+#Cont .center {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Cont .header h1{
+    font-family: 'Titulo';
+    margin: 2px;
+}
+#Cont .header h2{
+    font-family: 'SubTitulo';
+    margin-right: auto ;
+    margin-left: auto ;
+    font-size: 20px;
+}
+#Cont .header {
+    font-family: 'SubTitulo';
+    text-align: center;
+    color: rgb(65, 121, 130);
+}
+#Cont h1{
+    font-family: 'SubTitulo';
+   
+    color: rgb(65, 121, 130);
+}
+#Cont .corp{
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#talk{
+    background-color: rgb(52, 106, 112);
+    margin: 0;
+    padding: 10px;
+}
+#talk p {
+    text-align: center;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    margin: 0 auto;
+}
+#talk p.hold{
+    color: rgb(0, 31, 31);
+    font-size: 16px;
+    font-family: 'Titulo';
 }
 /*
 .match-container {
