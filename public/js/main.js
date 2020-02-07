@@ -25,3 +25,6 @@ function writetext() {
         }
     }
 }
+document.addEventListener('DOMContentLoaded', function (){
+    return writetext();
+});
