@@ -17,7 +17,7 @@
                         jq('#fa-ap').css('height', '100');
                         app.x = 0;
                         var $apresent = document.querySelector('#apresent');
-                        $apresent.innerHTML = "<p>Olá, Eu sou Hamilton Silva !</p>";
+                        $apresent.innerHTML = "<p>Hi, I'm Hamilton!</p>";
                     }
                 });
                 jq(win).scroll(() => {

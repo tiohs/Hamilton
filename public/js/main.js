@@ -1,5 +1,5 @@
 msg = new Array();
-msg[0] = "<p>Olá, Eu sou Hamilton Silva !</p>";
+msg[0] = "<p>Hi, I´m Hamilton!</p>";
 
 text1 = "";
 text2 = "";
