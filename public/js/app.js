@@ -5,8 +5,29 @@
                 this.initEnvents();
                 this.x = 0;
                 this.y = 0;
+                this.tempo = 0;
             },
+            getTime(){
+                let myM = new Date(1999,8,10);
+                let Mact = new Date();
+                return Mact.getTime() - myM.getTime();
+            },
+            getMth(){
+                let Mact = new Date();
+                if(Mact.getMonth() <= 9){
+                    return 4 + Mact.getMonth();
+                }
+                return Mact.getMonth();
+            }
+            ,
             initEnvents() {
+                setInterval(() => {
+                    document.querySelector('#cont span.ms').innerHTML = `${parseInt((app.getTime())/1000) + app.tempo}`;
+                    app.tempo += 1;
+                    document.querySelector('#cont span.year').innerHTML = `${parseInt(app.getTime()/31536000000) }`;
+                    document.querySelector('#cont span.mth').innerHTML = `${app.getMth()}`;
+                }, 1000);
+               
                 document.addEventListener('DOMContentLoaded', function (){
                 jq('#aboutMy').click(() => {
                     if (app.x === 0) {

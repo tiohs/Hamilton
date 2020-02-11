@@ -43,7 +43,7 @@ Menu Para cima
     display: none;
 }
 #home ul{
-    background-color: rgba(255, 255, 255, 0.52);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 0;
     margin: 0;
     list-style: none;
@@ -51,7 +51,7 @@ Menu Para cima
     flex-direction: column;
 }
 #home ul li {
-    background-color: rgba(255, 255, 255, 0.52);
+    background-color: rgba(255, 255, 255, 0.4);
     margin: 0;
     padding: 10px;
     display: initial;
