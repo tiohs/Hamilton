@@ -13,7 +13,7 @@
                         jq('#fa-ap').css('height', '200');
                         var $apresent = document.querySelector('#apresent');
                         $apresent.innerHTML = `<p> <p>`;
-                        return this.x = 1;
+                        return app.x = 1;
                     } else {
                         jq('#fa-ap').css('height', '100');
                         app.x = 0;
@@ -27,11 +27,12 @@
                         app.y = 1;
                         $('.app-do-up').removeClass('button-up');
                         $('.app-do-up').addClass('button-down');
+                        document.querySelector('#home').style.display = 'block';
                     } else if (win.scrollY < 137 && app.y == 1) {
                         app.y = 0;
                         $('.app-do-up').removeClass('button-down');
                         $('.app-do-up').addClass('button-up');
-                        
+                        document.querySelector('#home').style.display = 'none';
                     }
                 });
                 var cont = Array.from(document.querySelectorAll('div#home ul li'));

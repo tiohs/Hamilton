@@ -40,9 +40,10 @@ Menu Para cima
     margin: auto 0px;
     position: fixed;
     float: left;
+    display: none;
 }
 #home ul{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.52);
     padding: 0;
     margin: 0;
     list-style: none;
@@ -50,7 +51,7 @@ Menu Para cima
     flex-direction: column;
 }
 #home ul li {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.52);
     margin: 0;
     padding: 10px;
     display: initial;
