@@ -17,7 +17,7 @@ function writetext() {
         setTimeout('writetext()', 50);
     } else {
         count = 0;
-        if (count2 != 4) {
+        if (count2 != 3) {
             count2++;
             text2 += " ";
             text = eval('msg[' + count2 + '].split("")');

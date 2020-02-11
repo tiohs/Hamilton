@@ -9,32 +9,7 @@ Fontes
     font-family: 'Titulo';
     src: url('../roboto/Roboto-Light.woff');
 }
-/*
-Menu Para cima 
-*/
 
-#home {
-    border: 1px solid red;
-    width: 375px;
-    height: 50px;
-    position: fixed;
-    top: 0px;
-    right: 423px;
-   
-}
-#home ul{
-    padding: 0;
-    margin: 0;
-    width:375px;
-    list-style: none;
-}
-#home ul li {
-    border: 1px solid red;
-    margin: 0;
-    padding: 0;
-    width: 75px;
-    display: initial;
-}
 
 /*
 
@@ -56,13 +31,46 @@ body {
     margin-top: 0;
     padding: 1px;
 }
+/*
+Menu Para cima 
+*/
+
+#home {
+    width: 50px;
+    margin: auto 0px;
+    position: fixed;
+    float: left;
+}
+#home ul{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#home ul li {
+    background-color: #fff;
+    margin: 0;
+    padding: 10px;
+    display: initial;
+}
+#home ul li i{
+    color: rgb(21, 111, 119);
+    font-size: 25px; 
+}
+#home ul li i:hover {
+    color: #fff;
+}
+#home ul li:hover{
+    background-color:rgba(21, 111, 119, 0.582);
+}
 #body{
    /* background-color: #ff00008a;*/
     height: 100%;
  
 }
-#header {
-  
+#header { 
     display: flex;
     align-content: center;
 }
@@ -146,6 +154,7 @@ body {
 .button-upp {
     background-color: rgba(55, 103, 119, 1);
     border: 2px solid rgb(115, 163, 179);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.424);
     border-radius: 90px;
     height: 100px;
     width: 100px;
@@ -218,6 +227,7 @@ body {
     margin-top: 186px;
     position: relative;
     top : 164px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.424);
     animation-name: animacao-caixa;
     animation-duration: 0.5s;
 }
