@@ -25,7 +25,9 @@
                     document.querySelector('#cont span.ms').innerHTML = `${parseInt((app.getTime())/1000) + app.tempo}`;
                     app.tempo += 1;
                     document.querySelector('#cont span.year').innerHTML = `${parseInt(app.getTime()/31536000000) }`;
-                    document.querySelector('#cont span.mth').innerHTML = `${app.getMth()}`;
+                    console.log();
+                    document.querySelector('#cont span.mth').innerHTML = `${parseInt(`${ app.getTime()/3153600000 }`.slice(2))}`;
+                    
                 }, 1000);
                
                 document.addEventListener('DOMContentLoaded', function (){

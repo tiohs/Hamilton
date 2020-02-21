@@ -26,6 +26,7 @@ Fontes
 
 body {
     background-image: url('../background.png');
+    background-size: 100%;
     background-repeat: no-repeat;
     color: rgba(21, 111, 119, 0.534);
     margin-top: 0;
@@ -41,6 +42,8 @@ Menu Para cima
     position: fixed;
     float: left;
     display: none;
+    top:50%;
+    margin-bottom: -50px;
 }
 #home ul{
     background-color: rgba(255, 255, 255, 0.4);
@@ -66,6 +69,7 @@ Menu Para cima
 #home ul li:hover{
     background-color:rgba(21, 111, 119, 0.582);
 }
+
 #body{
    /* background-color: #ff00008a;*/
     height: 100%;
@@ -81,11 +85,13 @@ Menu Para cima
     background-color: aliceblue;
     align-content: center;
     width: 500px;
-    margin-right: auto;
-    margin-left: auto;
+  
     margin-top: 257px;
     height: 100px;
     position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     border-radius: 5px;
     color: rgba(55, 103, 119, 1);
 }
@@ -486,7 +492,7 @@ Porjeto
 */
 #proj {
     background-color: rgb(65, 121, 130);
-    width: 1280px;
+   
 }
 #proj .center {
     margin-top: 2px;
