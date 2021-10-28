@@ -1,619 +1,145 @@
-/*
-Fontes 
-*/
-@font-face{
-    font-family: 'SubTitulo';
-    src: url('../roboto/Roboto-Thin.woff');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/* DECLARATION VARS START */
+
+:root {
+  --first-color: ;
+  --second-color: ;
+  --first-color-text: rgb(21, 111, 119);
+  --second-color-text: ;
+
+  --first-background: rgb(232, 243, 246); /*Branco */
+  
+  --sec-background: hsla(237, 37%, 10%, 1);
+
+  --font-bold: 700;
+  --font-media-bold: 550;
+
+  --mb-2: 2rem;
 }
-@font-face{
-    font-family: 'Titulo';
-    src: url('../roboto/Roboto-Light.woff');
+
+/* DECLARATION VARS END */
+
+/* RESET START */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/*
-
-Fontes 
-
-*/
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-family: 'SubTitulo';
+ul {
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* RESET END*/
+
+/* LAYOUT START */
 
 body {
-    background-image: url('../background.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: rgba(21, 111, 119, 0.534);
-    margin-top: 0;
-    padding: 1px;
+  background-image: url('../background.png');
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*
-Menu Para cima 
-*/
+
+h1 {
+  font-size: 2.5rem;
+}
+/* LAYOUT END */
+
+
+/*  SECTION HEADER NAV START */
+
+#menu {
+  position: fixed;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  background: var(--first-background);
+  opacity: 0.8;
+}
+
+#menu ul li {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#menu ul li:hover {
+  background-color: var(--first-color-text);
+
+}
+
+#menu ul li a {
+  font-size: 1.75rem;
+  padding: 1rem;
+  color: var(--first-color-text);
+
+}
+
+#menu ul li a:hover {
+  color: var(--first-background);
+}
+/*  SECTION HEADER NAV END */
+
+/* SECTION HOME START */
 
 #home {
-    width: 50px;
-    margin: auto 0px;
-    position: fixed;
-    float: left;
-    display: none;
-    top:50%;
-    margin-bottom: -50px;
-}
-#home ul{
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-#home ul li {
-    background-color: rgba(255, 255, 255, 0.4);
-    margin: 0;
-    padding: 10px;
-    display: initial;
-}
-#home ul li i{
-    color: rgb(21, 111, 119);
-    font-size: 25px; 
-}
-#home ul li i:hover {
-    color: #fff;
-}
-#home ul li:hover{
-    background-color:rgba(21, 111, 119, 0.582);
-}
-
-#body{
-   /* background-color: #ff00008a;*/
-    height: 100%;
- 
-}
-#header { 
-    display: flex;
-    align-content: center;
-}
-
-#fa-ap {
-    font-family: 'Titulo' ;
-    background-color: aliceblue;
-    align-content: center;
-    width: 500px;
-  
-    margin-top: 257px;
-    height: 100px;
-    position: relative;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    color: rgba(55, 103, 119, 1);
-}
-#fa-ap p {
-    position: absolute;
-    top: 28px;
-    left: 117px;
-    font-size: 36px;
-}
-#fa-ap i {
-    font-size: 25px; 
-    position: absolute; 
-    top: 3px; 
-    right: 3px;
-}
-@keyframes animacao-caixa1 {
-    from { background-image: url('../79509414_2781078612119003_7081528428238733312_n.jpg');
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 210px;
-    height: 250px;
-    width: 250px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 186px;
-    position: relative;
-    top : 164px;
-    }
-    to {
-    background-color: rgba(21, 111, 119, 0.452);
-    border: 1px solid rgb(21, 111, 119);
-    border-radius: 90px;
-    height: 100px;
-    width: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 236px;
-    position: relative;
-    }
-   
-}
-.button-up {
-    background-color: rgba(21, 111, 119, 0.452);
-    border: 1px solid rgb(21, 111, 119);
-    border-radius: 90px;
-    height: 100px;
-    width: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 236px;
-    position: relative;
-    z-index: 1;
-    animation-name: animacao-caixa1;
-    animation-duration: 0.5s;
-}
-
-.button-up i {
-    font-size: 50px; 
-    position: absolute; 
-    top: 25px; 
-    left: 25px;
-    color: rgb(21, 111, 119);
-    z-index: 0;
-}
-.button-upp {
-    background-color: rgba(55, 103, 119, 1);
-    border: 2px solid rgb(115, 163, 179);
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.424);
-    border-radius: 90px;
-    height: 100px;
-    width: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 236px;
-    position: relative;
-    top: 174px;
-    z-index: 1;
-}
-
-.button-upp i {
-    font-size: 50px; 
-    position: absolute; 
-    top: 25px; 
-    left: 25px;
-    color: rgb(145, 193, 209);
-    z-index: 0;
-}
-.button-down i {
-    font-size: 50px; 
-    position: absolute; 
-    top: 25px; 
-    left: 25px;
-    color: rgba(21, 111, 119, 0);
-    z-index: 1;
-}
-.cont-git {
-    display: inline;
-}
-
-@keyframes animacao-caixa {
-    from {
-        background-color: rgba(21, 111, 119, 0.452);
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 90px;
-        height: 100px;
-        width: 100px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 100px;
-        position: relative;
-    }
-    to {
-        background-size: 300px;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 210px;
-        height: 250px;
-        width: 250px;
-        top : 174px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 164px;
-        position: relative;
-    }
-}
-.button-down {
-    background-image: url('../79509414_2781078612119003_7081528428238733312_n.jpg');
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 210px;
-    height: 250px;
-    width: 250px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 186px;
-    position: relative;
-    top : 164px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.424);
-    animation-name: animacao-caixa;
-    animation-duration: 0.5s;
-}
-/*Minhas congigurações para sub */
-div.p-cont p{
-    margin-bottom: 0;
-}
-div.p-cont {
-    margin: 10px;
-}
-/* Fundo */
-#cont,#experence,#Cont{
-    background-color: rgba(202, 229, 229, 0.712);
-}
-/* Minhas informção */
-#cont { 
-    padding: 200px 50px 10px 50px;
-    display: flex;
-}
-#cont .left{
-    width: 500px;
-    color : rgb(115, 163, 179);
-    margin-right: 10px;
-}
-#cont .left p{
-    padding: 5px;
-    font-size: 20px;
-    color: black;
-   font-style: oblique;
-}
-#cont .left p strong{
-    font-weight: bold;
-}
-#cont div.text h1 {
-    padding: 5px;
-    font-size: 30px;
-    color : rgb(115, 163, 179);
-    font-family: 'Titulo';
-}
-/*Mais informação direito */
-#cont .reigt{
-    width: 500px;
-    color : rgb(115, 163, 179);
-    margin-right: 10px;
-}
-#cont .reigt .ft{
-    display: flexbox;
-    flex-direction: column;
-}
-#cont .reigt .ft {
-    margin: 5px;
-    display: flexbox;
-    flex-direction: column;
-}
-#cont .reigt .ft .sft{
-    height: 52px;
-    display: flex;
-    margin: 0px;
-    border-bottom: 1px solid rgb(98, 161, 174);
-}
-#cont .reigt .ft .sft p{
-    font-size: 20px;
-    padding: 10px;
-    
-}
-#cont .reigt .ft .sft div{
-    width: 52px;
-    position: relative;
-    background-color: rgb(98, 161, 174);
-}
-
-#cont .reigt .ft .sft i {
-    font-size: 30px;
-    position: absolute;
-    top : 10px;
-    left: 10px;
-    color: rgb(221, 234, 237);
-}
-#cont .reigt .ft .sft .eqr{
-    width: 50px;
-    position: relative;
-    background-color: rgb(221, 234, 237);
-}
-#cont .reigt .ft .sft .eqr i {
-    font-size: 30px;
-    position: absolute;
-    top : 10px;
-    left: 10px;
-    color: rgb(98, 161, 174);
-}
-#cont .reigt .ft .sft .nm {
-    width: 388px;
-    background: rgb(232, 243, 246);
-}
-/*
-Habilidades 
-*/
-#skill {
-    color : white;
-    background-color: rgb(65, 121, 130);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2px;
-}
-#skill .center {
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#skill .header h1{
-    font-family: 'Titulo';
-    margin: 2px;
-}
-#skill .header h2{
-    font-family: 'SubTitulo';
-    margin: 2px;
-    margin-right: auto ;
-    margin-left: auto ;
-    font-size: 20px;
-}
-#skill .header {
-    font-family: 'SubTitulo';
-    text-align: center;
-    color: rgb(226, 239, 240);
-}
-
-#skill .box {
-    background-color: rgb(52, 106, 112);
-    width: 900px;
-}
-#skill .cod .corp {
-    border-top: 1px solid rgb(65, 121, 130);
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
-#skill .cod .corp .list {
-    display: flex;
-    flex-flow: wrap;
-}
-#skill .cod .corp .subT{
-    color : rgb(115, 163, 179);
-}
-#skill .cod .corp .list div {
-    width: 200px;
-    margin-top: 5px;
-    padding: 10px;
-  
-}
-#skill .cod .lgua .graf{
-    background-color: rgb(83, 110, 114);
-   margin: 0px;
-    width: 300px;
-    padding: 1px;
-}
-#skill .cod .lgua .grafni{
-    background-color: rgb(139, 139, 139);
-    width: 300px;
-    height: 15px;    
-    margin: 0px;  
-}
-#skill .cod .lgua .grafni1{
-    background-color: rgb(139, 139, 139);
-    width: 180px;
-    height: 15px;    
-    margin: 0px;  
-}
-#skill .cod .lgua .grafni2{
-    background-color: rgb(139, 139, 139);
-    width: 27px;
-    height: 15px;    
-    margin: 0px;  
+
+#home .settings {
+  width: 32rem;
+  height: 10rem;
+  background-color: var(--first-background);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#skill .cod .lgua {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    text-align: center;
-}
-#skill .cod .lgua div{
-    margin: 10px 10px 10px 30px;
-}
-#skill .cod .lgua h1{
-    font-size: 20px;
-}
-#skill .cod .lgua .hw {
-    width: 90px;
-    text-align: start;
-}
-#skill .cod .lgua .ew {
-    width: 320px;
-    text-align: start;
-    
-}
-#skill .cod .lgua p{
-    padding: 1px;
-    font-size: 14px;
-    
-}
-/*
-     Experence 
-*/
-
-#experence .center {
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#experence .header h1{
-    font-family: 'Titulo';
-    margin: 2px;
-}
-#experence .header h2{
-    font-family: 'SubTitulo';
-    margin: 2px;
-    margin-right: auto ;
-    margin-left: auto ;
-    font-size: 20px;
-}
-#experence div.header {
-    font-family: 'SubTitulo';
-    text-align: center;
-    color: rgb(65, 121, 130);
-}
-#experence h1{
-    font-family: 'SubTitulo';
-    color: rgb(65, 121, 130);
-}
-#experence div {
-    width: 900px;
-}
-#experence .corp{
-    margin: 2px;
-    width: 800px;
-    margin: 0 auto;
-    color : black;
-}
-#experence .corp1 div {
-
-    padding: 5px;
-}
-#experence .corp1{
-    display: flex;
-    width: 700px;
-}
-#experence .corp1 h2 {
-    font-size: 16px;
-    color :rgb(83, 110, 114);
-}
-/*
-Porjeto
-*/
-#proj {
-    background-color: rgb(65, 121, 130);
-   
-}
-#proj .center {
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#proj .header h1{
-    font-family: 'Titulo';
-    margin: 2px;
-}
-#proj .header h2{
-    font-family: 'SubTitulo';
-    margin: 2px;
-    margin-right: auto ;
-    margin-left: auto ;
-    font-size: 20px;
-}
-#proj .header {
-    font-family: 'SubTitulo';
-    text-align: center;
-    color: rgb(226, 239, 240);
+#home .settings i {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.375rem;
+  color: var(--first-color-text);
 }
 
-#all-project {
-    width: 900px;
-    margin : 0 auto;
-    display: flex;
-    flex-flow: wrap;
-}
-#all-project .img {
-    width: 300px;
-    height: 300px;
-}
-#all-project .corp {
-    position: relative;
-    width: 300px;
-    margin: 0px;
-}
-#all-project .corp .buttons{
-    position : absolute;
-    top : 100px;
-    right: 2px;
-    
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(1, 31, 31, 0.335);
-}
-#all-project .corp .buttons i{
-    margin: 10px;
-    font-size: 26px;
-    color: rgba(65, 121, 130, 0.568);
-}
-#all-project .corp .buttons i:hover{
-    transform: translateY(-5px);
-    transition: all .2s;
-    margin: 10px;
-    font-size: 26px;
-    color: rgb(65, 121, 130);
-}
-#Cont {
-    padding-bottom: 10px;
+#home .settings .show h1 {
+  color: var(--first-color-text);
 }
 
-#Cont .center {
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#Cont .header h1{
-    font-family: 'Titulo';
-    margin: 2px;
-}
-#Cont .header h2{
-    font-family: 'SubTitulo';
-    margin-right: auto ;
-    margin-left: auto ;
-    font-size: 20px;
-}
-#Cont .header {
-    font-family: 'SubTitulo';
-    text-align: center;
-    color: rgb(65, 121, 130);
-}
-#Cont h1{
-    font-family: 'SubTitulo';
-   
-    color: rgb(65, 121, 130);
-}
-#Cont .corp{
-    background-color: rgb(255, 255, 255);
-    width: 800px;
-    padding: 20px;
-    margin: 0px auto;
-}
 
-#talk{
-    background-color: rgb(52, 106, 112);
-    margin: 0;
-    padding: 10px;
-}
-#talk p {
-    text-align: center;
-    color: #ccc;
-    margin: 0;
-    padding: 0;
-    width: 700px;
-    margin: 0 auto;
-}
-#talk p.hold{
-    color: rgb(0, 31, 31);
-    font-size: 16px;
-    font-family: 'Titulo';
-}
-/*
-.match-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-   
-}
-*/
+/*SECTION HOME END */
+
+
+
+/* Medias Queries */
