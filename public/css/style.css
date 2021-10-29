@@ -10,8 +10,9 @@
   --second-color-text: ;
 
   --first-background: rgb(232, 243, 246); /*Branco */
-  
-  --sec-background: hsla(237, 37%, 10%, 1);
+  --first-background-black:  rgba(55, 103, 119, 1);
+
+  --sec-background: ;
 
   --font-bold: 700;
   --font-media-bold: 550;
@@ -117,12 +118,12 @@ h1 {
 } 
 
 #home::before {
-  display: none;
+  
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: var(--first-background-black);
   opacity: 0.5;
   z-index: 0;
   width: 100%;
@@ -131,7 +132,7 @@ h1 {
 #home .settings {
   width: 32rem;
   height: 10rem;
-  background-color: var(--first-background);
+  background-color: var(--first-color-text);
   position: relative;
   display: flex;
   justify-content: center;
@@ -143,11 +144,11 @@ h1 {
   right: 1rem;
   top: 1rem;
   font-size: 1.375rem;
-  color: var(--first-color-text);
+  color: var(--first-background);
 }
 
 #home .settings .show h1 {
-  color: var(--first-color-text);
+  color: var(--first-background);
 }
 
 
