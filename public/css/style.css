@@ -118,7 +118,7 @@ h1 {
 } 
 
 #home::before {
-  
+  display: none;
   content: '';
   position: absolute;
   top: 0;
@@ -132,10 +132,9 @@ h1 {
 #home .settings {
   width: 32rem;
   height: 10rem;
-  background-color: var(--first-color-text);
+  background-color: var(--first-background);
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -144,16 +143,24 @@ h1 {
   right: 1rem;
   top: 1rem;
   font-size: 1.375rem;
-  color: var(--first-background);
+  color: var(--first-color-text) ;
 }
 
 #home .settings .show h1 {
-  color: var(--first-background);
+  text-align: left;
+  color: var(--first-color-text);
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
+#home .settings .show h1 .tep {
+  font-size: 3.5rem;
+}
+#home .settings .show h1 #typing {
+  margin-left: 0.75rem;
+}
 /*SECTION HOME END */
-
-
 
 /* Medias Queries */

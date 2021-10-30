@@ -1,4 +1,4 @@
-const texts = ['HTML','Tailwind Css','JavaScript','React Js','django','Bootstrap','jQuery'];
+const texts = ['Hi, I am Hamilton Silva','I\'m a programmer','in (JS | TS ) ','in React | Nest ','in NodeJS','Other technologies','with C#, Python, PHP', 'I like design'];
 var count = 0;
 var index = 0;
 var decrement = 0;
