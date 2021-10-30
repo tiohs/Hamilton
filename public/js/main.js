@@ -1,4 +1,4 @@
-const texts = ['Hi, I am Hamilton Silva','I\'m a programmer','in (JS | TS ) ','in React | Nest ','in NodeJS','Other technologies','with C#, Python, PHP', 'I like design'];
+const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
 var count = 0;
 var index = 0;
 var decrement = 0;

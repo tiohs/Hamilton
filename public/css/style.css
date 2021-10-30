@@ -111,6 +111,15 @@ h1 {
 #menu ul li a:hover {
   color: var(--first-background);
 }
+
+#menu ul li.ative {
+  background-color: var(--first-color-text);
+  
+}
+
+#menu ul li.ative a {
+  color: var(--first-background);
+}
 /*  SECTION HEADER NAV END */
 
 /* SECTION HOME START */
