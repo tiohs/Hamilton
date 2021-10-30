@@ -1,30 +1,42 @@
-msg = new Array();
-msg[0] = "<p>Hi, I´m Hamilton!</p>";
+const texts = ['HTML','Tailwind Css','JavaScript','React Js','django','Bootstrap','jQuery'];
+var count = 0;
+var index = 0;
+var decrement = 0;
+var currentText = '';
+var letter = '';
 
-text1 = "";
-text2 = "";
-count = 0;
-count2 = 0;
-text = msg[0].split("");
-
-function writetext() {
-    text1 = text2 + " <span color='silver'> " + text[count] + " </span> ";
-    text2 += text[count];
-    var $apresent = document.querySelector('#apresent');
-    $apresent.innerHTML = text1;
-    if (count < text.length - 1) {
-        count++;
-        setTimeout('writetext()', 50);
-    } else {
-        count = 0;
-        if (count2 != 3) {
-            count2++;
-            text2 += " ";
-            text = eval('msg[' + count2 + '].split("")');
-            setTimeout('writetext()', 50);
-        }
-    }
+function sleep(delay){
+    return new Promise(resolve => setTimeout(resolve,delay));
 }
-document.addEventListener('DOMContentLoaded', function (){
-    return writetext();
-});
+
+const typeWrite = async() =>{
+  if (count == texts.length)
+  {
+    count = 0;
+  }
+  currentWord = texts[count];
+  currentLetter = currentWord.slice(0,++index);
+  document.querySelector("#typing").textContent = currentLetter;
+  if(index == currentWord.length)
+  {
+    await sleep(1500);
+    while(index > 0)
+    {
+      currentLetter = currentWord.slice(0,--index);
+      document.querySelector("#typing").textContent = currentLetter;
+      await sleep(50);
+    }
+    count++;
+    index = 0;
+    await sleep(500);
+  }
+  setTimeout(typeWrite,Math.random()*200+50);
+}
+typeWrite();
+
+
+
+
+
+
+
