@@ -176,6 +176,24 @@ h1 {
 #home .settings .show h1 #typing {
   margin-left: 0.75rem;
 }
+
+#home .down {
+  position: absolute;
+  bottom: 4rem;
+  border: 0.4rem solid var(--first-color-text);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+} 
+
+#home .down i {
+  color: var(--first-color-text);
+  font-size: 2.5rem;
+}
 /*SECTION HOME END */
 
 /* Medias Queries */
