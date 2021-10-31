@@ -101,8 +101,11 @@ p {
   z-index: 10000;
 }
 
+
+ /* changes */
 #menu ul {
-  display: flex;
+  /* display: flex;   */
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
