@@ -242,7 +242,7 @@ section#redesSocias ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(50px);
+  transform: translateY(6.875rem);
 }
 
 section#redesSocias ul li {
@@ -255,6 +255,17 @@ section#redesSocias ul li {
   justify-content: center;
   background-color: var(--bg-section-second);
 }
+section#redesSocias ul li.single {
+  
+  width: 14rem;
+  height: 14rem;
+}
+section#redesSocias ul li.single img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 
 section#redesSocias ul li i {
   font-size: 3rem;
@@ -392,5 +403,21 @@ section#about .info .conct ul .rith {
 
 /* Phones */
 @media only screen and (max-width: 480px) {
+  section#redesSocias ul li i {
+    font-size: 2rem;
+    color: var(--sec-background);
+    
+  }
+  section#redesSocias ul li {
+    width: 4rem;
+    height: 4rem;
+  }
+  section#redesSocias ul {
+    transform: translateY(4.875rem);
+  }
+  section#redesSocias ul li.single {
   
+    width: 10rem;
+    height: 10rem;
+  }
 }
