@@ -233,6 +233,21 @@ p {
 /*SECTION HOME END */
 
 
+/* SECTION SOCIAL */
+
+section#redesSocias ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#redesSocias ul li {
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid red;
+}
+/*SECTION SOCIAL */
+
 /* SETION ABOUT ME */
 
 section#about .info {
