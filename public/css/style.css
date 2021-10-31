@@ -107,7 +107,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 4rem;
-  background: var(--first-background);
+  background: var(--sec-background);
   opacity: 0.8;
 }
 
@@ -171,7 +171,7 @@ p {
 #home .settings {
   width: 32rem;
   height: 10rem;
-  background-color: var(--first-background);
+  background-color: var(--sec-background);
   position: relative;
   display: flex;
   align-items: center;
@@ -239,12 +239,24 @@ section#redesSocias ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(50px);
 }
 
 section#redesSocias ul li {
   width: 6rem;
   height: 6rem;
-  border: 1px solid red;
+  border: 1px solid var(--sec-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-section-second);
+}
+
+section#redesSocias ul li i {
+  font-size: 3rem;
+  color: var(--sec-background);
+  
 }
 /*SECTION SOCIAL */
 
@@ -252,6 +264,7 @@ section#redesSocias ul li {
 
 section#about .info {
   display: flex;
+  margin-top: 6rem;
 }
 
 section#about .info div.date {
