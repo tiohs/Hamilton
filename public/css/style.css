@@ -234,10 +234,10 @@ p {
 
 section#about .info {
   display: flex;
-
 }
+
 section#about .info div.date {
-  width: 50%;
+  width: 500px;
 }
 
 section#about .info h3 {
@@ -250,7 +250,7 @@ section#about .info .date p {
 }
 
 section#about .info .conct {
-  width: 50%;
+  width: 500px;
 }
 section#about .info .conct ul {
   padding: 1rem;
@@ -265,7 +265,7 @@ section#about .info .conct ul li{
   justify-content: space-between;
   width: 100%;
   height: 3rem;
-  border: 1px solid red;
+  border: 1px solid  var(--sec-background);
 }
 
 section#about .info .conct ul li div {
@@ -277,13 +277,29 @@ section#about .info .conct ul li div {
 section#about .info .conct ul li .left {
   width: 10%;
   background-color: var(--sec-background);
- 
+}
+
+section#about .info .conct ul li .left i {
+  color: var(--first-color-text);
+}
+section#about .info .conct ul li .center {
+  justify-content: flex-start;
+  width: 80%;
+  color: rgb(98, 161, 174);
+  background-color: var(--sec-background);
 }
 section#about .info .conct ul li .center p {
-  text-align: start;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 section#about .info .conct ul i {
   font-size: 2.5rem;
+}
+section#about .info .conct ul .rith {
+  background-color: var(--first-color-text);
+  width: 10%;
+  color: var(--sec-background);
 }
 /* SETION ABOUT ME END */
 
@@ -299,11 +315,22 @@ section#about .info .conct ul i {
 
 /*Tablete */
 @media only screen and (max-width: 1023px) {
-  
+  section#about .info .conct {
+    width: 800px;
+  }
 }
 
 /*Phones to small Table */
 @media only screen and (max-width: 767px) {
+  section#about .info {
+    flex-wrap: wrap;
+  }
+  section#about .info .date {
+    margin: 0 auto;
+  }
+  section#about .info .conct {
+    margin: 0 auto;
+  }
   html {
     font-size: 60%;
   }
