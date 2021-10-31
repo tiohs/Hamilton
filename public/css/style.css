@@ -9,11 +9,14 @@
   --first-color-text: rgb(21, 111, 119);
   --second-color-text: ;
 
-  --first-background: rgb(232, 243, 246); /*Branco */
+  --first-background: rgba(232, 243, 246,  0.4); /*Branco */
   --first-background-black:  rgba(55, 103, 119, 1);
 
+
   
-  --sec-background: rgb(221, 234, 237);
+  --sec-background: #e8f3f6;
+  --bg-section-primary: rgba(202, 229, 229, 0.712);
+  --bg-section-second: rgb(98, 161, 174);
 
   --font-bold: 700;
   --font-media-bold: 550;
@@ -68,7 +71,7 @@ section {
 
 section.bg {
   padding-top: 3rem;
-  background-color: var(--first-background);
+  background-color: var(--bg-section-primary);
 }
 
 h1 {
@@ -265,7 +268,7 @@ section#about .info .conct ul li{
   justify-content: space-between;
   width: 100%;
   height: 3rem;
-  border: 1px solid  var(--sec-background);
+  border-bottom: 1px solid  var(--bg-section-second);
 }
 
 section#about .info .conct ul li div {
@@ -276,17 +279,18 @@ section#about .info .conct ul li div {
 }
 section#about .info .conct ul li .left {
   width: 10%;
-  background-color: var(--sec-background);
+  background-color: rgb(221, 234, 237);
 }
 
 section#about .info .conct ul li .left i {
-  color: var(--first-color-text);
+  color: var(--bg-section-second);
 }
 section#about .info .conct ul li .center {
   justify-content: flex-start;
   width: 80%;
   color: rgb(98, 161, 174);
   background-color: var(--sec-background);
+  
 }
 section#about .info .conct ul li .center p {
   padding: 1rem;
@@ -297,7 +301,7 @@ section#about .info .conct ul i {
   font-size: 2.5rem;
 }
 section#about .info .conct ul .rith {
-  background-color: var(--first-color-text);
+  background-color: var(--bg-section-second);
   width: 10%;
   color: var(--sec-background);
 }
