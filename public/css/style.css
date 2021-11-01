@@ -60,12 +60,13 @@ body {
 
 
 .container {
-  margin-left: 2.5rem;
+  margin-left: 4.5rem;
   margin-right: 2.5rem;
 }
 
 section {
-  
+ 
+
   width: 100vw;
 }
 
@@ -370,6 +371,10 @@ section#about .info .conct ul .rith {
 
 /*Phones to small Table */
 @media only screen and (max-width: 767px) {
+  .container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
   section#about .info {
     flex-wrap: wrap;
   }
