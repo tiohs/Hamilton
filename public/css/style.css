@@ -100,6 +100,21 @@ h2 {
 p {
   font-weight: 300;
 }
+
+section .header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+section .header p {
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
 /* LAYOUT END */
 
 
@@ -364,6 +379,41 @@ section#about .info .conct ul .rith {
 }
 /* SETION ABOUT ME END */
 
+
+/* SECTION SKILLS START */
+section#skills .content{
+  background-color: var(--first-background-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section#skills .content {
+  color: #fff;
+  width: 100%;
+}
+section#skills .content .header {
+  width: 80%;
+  border-bottom: 1px solid var(--sec-background);
+  padding: 1rem;
+}
+
+section#skills .content .desc {
+  width: 80%;
+}
+
+section#skills .content .desc h4 {
+  padding: 0.475rem;
+}
+
+section#skills .content .desc ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+/* SECTION SKILLS START */
 
 /* Medias Queries */
 
