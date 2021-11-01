@@ -72,7 +72,14 @@ section {
 
 section.bg {
   padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: var(--bg-section-primary);
+}
+
+section.bg2 {
+  padding-top: 3rem;
+  background: var(--sec-background);
+  padding-bottom: 3rem;
 }
 
 h1 {
@@ -81,8 +88,13 @@ h1 {
 }
 
 h3 {
-  font-size: 1.5;
+  font-size: 1.5rem;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 p {
