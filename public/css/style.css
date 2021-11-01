@@ -390,8 +390,9 @@ section#skills .content{
 }
 
 section#skills .content {
-  color: #fff;
+  color: var(--sec-background);
   width: 100%;
+  margin-bottom: 1rem;
 }
 section#skills .content .header {
   width: 80%;
