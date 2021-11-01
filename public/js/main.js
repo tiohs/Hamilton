@@ -47,7 +47,11 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
   ` section#redesSocias ul li,
     section#about .info div.date,
-    section#about .info .conct
+    section#about .info .conct,
+    section#skills .content .header,
+    section#skills .content .desc,
+    section#skills .content .desc h4,
+    section#skills .content .desc ul li
   `,
   { interval: 100 }
 );
