@@ -281,7 +281,7 @@ section#about .info {
 }
 
 section#about .info div.date {
-  width: 500px;
+  width: 700px;
 }
 
 section#about .info h3 {
@@ -294,8 +294,11 @@ section#about .info .date p {
 }
 
 section#about .info .conct {
-  width: 500px;
+  width: 700px;
+  margin: 0 auto;
 }
+
+
 section#about .info .conct ul {
   padding: 1rem;
   width: 100%;
