@@ -37,6 +37,17 @@ typeWrite();
 
 
 
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
 
-
-
+scrollReveal.reveal(
+  ` section#redesSocias ul li,
+    section#about .info div.date,
+    section#about .info .conct
+  `,
+  { interval: 100 }
+)
