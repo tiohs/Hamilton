@@ -389,6 +389,10 @@ section#skills .content{
   justify-content: center;
 }
 
+section#skills .header {
+  color: var(--first-background-black);
+}
+
 section#skills .content {
   color: var(--sec-background);
   width: 100%;
@@ -396,6 +400,7 @@ section#skills .content {
 }
 section#skills .content .header {
   width: 80%;
+  
   border-bottom: 1px solid var(--sec-background);
   padding: 1rem;
 }
