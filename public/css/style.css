@@ -438,7 +438,9 @@ section#skills .content .desc ul div.content div.nivel {
   background-color: var(--sec-background);
 }
 
-/* SECTION SKILLS START */
+/* SECTION SKILLS END */
+
+/* SECTION EXPERERIENCE STRAT */
 
 /* Medias Queries */
 
@@ -495,8 +497,6 @@ section#skills .content .desc ul div.content div.nivel {
     margin-right: 1rem;
   }
 }
-
-
 
 /* Phones */
 @media only screen and (max-width: 480px) {
