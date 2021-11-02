@@ -423,6 +423,7 @@ section#skills .content .desc ul div.content {
   border: 1px solid var(--sec-background);
   width: 20rem;
   height: 1rem;
+  align-items: flex-start;
 }
 
 section#skills .content .desc ul div.content div.nivel {
