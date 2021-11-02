@@ -414,6 +414,24 @@ section#skills .content .desc ul {
   flex-wrap: wrap;
   padding: 1rem;
 }
+
+
+section#skills .content .desc ul li {
+  margin: 0.1rem;
+}
+section#skills .content .desc ul div.content {
+  border: 1px solid var(--sec-background);
+  width: 20rem;
+  height: 1rem;
+}
+
+section#skills .content .desc ul div.content div.nivel {
+  
+  border: 1px solid rgb(104, 0, 114);
+  height: 99%;
+  background-color: var(--sec-background);
+}
+
 /* SECTION SKILLS START */
 
 /* Medias Queries */
@@ -434,6 +452,9 @@ section#skills .content .desc ul {
 
 /*Phones to small Table */
 @media only screen and (max-width: 767px) {
+  section#skills .content:last-child .desc ul {
+    flex-direction: column;
+  }
   .container {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
