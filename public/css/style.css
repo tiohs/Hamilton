@@ -445,9 +445,17 @@ section#skills .content .desc ul div.content div.nivel {
 
 /* SECTION EXPERERIENCE STRAT */
 
+#experence {
+  color: var(--first-background-black);
+}
+#experence a {
+  color: var(--first-background-black);
+  font-weight: 500;
+} 
 #experence .content {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+ 
   margin: 1rem;
   justify-content: center;
   
@@ -491,6 +499,16 @@ section#skills .content .desc ul div.content div.nivel {
 
 /*Phones to small Table */
 @media only screen and (max-width: 767px) {
+  #experence .content ul li p {
+    width: 80rem;
+   
+  }
+  #experence .content ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ 
+  }
   section#skills .content:last-child .desc ul {
     flex-direction: column;
   }
@@ -509,6 +527,7 @@ section#skills .content .desc ul div.content div.nivel {
   }
   html {
     font-size: 60%;
+    overflow-x: hidden;
   }
   #menu {
     position: fixed;
@@ -531,6 +550,10 @@ section#skills .content .desc ul div.content div.nivel {
 
 /* Phones */
 @media only screen and (max-width: 480px) {
+  #experence .content ul li p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   section#redesSocias ul li i {
     font-size: 2rem;
   }
