@@ -46,6 +46,9 @@ img {
   height: auto;
 }
 
+html {
+  overflow-x: hidden;
+}
 /* RESET END*/
 
 /* LAYOUT START */
@@ -442,6 +445,34 @@ section#skills .content .desc ul div.content div.nivel {
 
 /* SECTION EXPERERIENCE STRAT */
 
+#experence .content {
+  width: 80%;
+  margin: 0 auto;
+  margin: 1rem;
+  justify-content: center;
+  
+}
+
+#experence .content ul li{
+  display: flex;
+  
+  align-items: center;
+  margin: 1rem;
+}
+#experence .content ul li div {
+ 
+  width: 16rem;
+ 
+  display: flex;
+  align-items: flex-start;
+}
+#experence .content ul li p {
+  width: 40rem;
+}
+#experence .content ul li div strong {
+  margin-bottom: 0.675rem;
+}
+/* SECTION EXPERERIENCE END */
 /* Medias Queries */
 
 
