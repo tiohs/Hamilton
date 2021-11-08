@@ -520,6 +520,15 @@ section#project .content .card:hover::before {
   margin-bottom: 0.675rem;
 }
 /* SECTION EXPERERIENCE END */
+
+
+section#footer{
+  text-align: center;
+  color: var(--first-background-black);
+}
+section#footer p {
+  margin-bottom: 1rem;
+}
 /* Medias Queries */
 
 
