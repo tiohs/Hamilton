@@ -9,11 +9,12 @@
   --first-color-text: rgb(21, 111, 119);
   --second-color-text: ;
 
-  --first-background: rgba(232, 243, 246,  0.4); /*Branco */
-  --first-background-black:  rgba(55, 103, 119, 1);
+  --first-background: rgba(232, 243, 246, 0.4);
+  /*Branco */
+  --first-background-black: rgba(55, 103, 119, 1);
 
 
-  
+
   --sec-background: #e8f3f6;
   --bg-section-primary: rgba(202, 229, 229, 0.712);
   --bg-section-second: rgb(98, 161, 174);
@@ -49,6 +50,7 @@ img {
 html {
   overflow-x: hidden;
 }
+
 /* RESET END*/
 
 /* LAYOUT START */
@@ -56,7 +58,7 @@ html {
 body {
   background-image: url('../background.png');
   background-size: 100vw;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
 }
@@ -68,7 +70,7 @@ body {
 }
 
 section {
- 
+
 
   width: 100vw;
 }
@@ -112,6 +114,7 @@ section .header {
   justify-content: center;
   margin-bottom: 1rem;
 }
+
 section .header p {
   margin-top: 1rem;
   width: 50%;
@@ -133,9 +136,9 @@ section .header p {
 }
 
 
- /* changes */
+/* changes */
 #menu ul {
-  display: flex;   
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -177,6 +180,7 @@ section .header p {
 #menu ul li.ative a {
   color: var(--first-background);
 }
+
 /*  SECTION HEADER NAV END */
 
 /* SECTION HOME START */
@@ -187,7 +191,7 @@ section .header p {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 #home::before {
   display: none;
@@ -201,6 +205,7 @@ section .header p {
   width: 100%;
   height: 100%;
 }
+
 #home .settings {
   width: 32rem;
   height: 10rem;
@@ -215,7 +220,7 @@ section .header p {
   right: 1rem;
   top: 1rem;
   font-size: 1.375rem;
-  color: var(--first-color-text) ;
+  color: var(--first-color-text);
 }
 
 #home .settings .show h1 {
@@ -230,6 +235,7 @@ section .header p {
 #home .settings .show h1 .tep {
   font-size: 3.5rem;
 }
+
 #home .settings .show h1 #typing {
   margin-left: 0.75rem;
 }
@@ -244,7 +250,7 @@ section .header p {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
-} 
+}
 
 #home .down i {
   color: var(--first-color-text);
@@ -252,12 +258,13 @@ section .header p {
   animation: move 1.2s linear infinite;
 }
 
-@keyframes move{
-  0%{
-  
+@keyframes move {
+  0% {
+
     transform: translateY(-1rem);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translateY(1rem);
   }
@@ -285,11 +292,13 @@ section#redesSocias ul li {
   justify-content: center;
   background-color: var(--bg-section-second);
 }
+
 section#redesSocias ul li.single {
-  
+
   width: 14rem;
   height: 14rem;
 }
+
 section#redesSocias ul li.single img {
   width: 100%;
   height: 100%;
@@ -300,8 +309,9 @@ section#redesSocias ul li.single img {
 section#redesSocias ul li i {
   font-size: 3rem;
   color: var(--sec-background);
-  
+
 }
+
 /*SECTION SOCIAL */
 
 /* SETION ABOUT ME */
@@ -337,13 +347,13 @@ section#about .info .conct ul {
   flex-direction: column;
 }
 
-section#about .info .conct ul li{
+section#about .info .conct ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 3rem;
-  border-bottom: 1px solid  var(--bg-section-second);
+  border-bottom: 1px solid var(--bg-section-second);
 }
 
 section#about .info .conct ul li div {
@@ -352,6 +362,7 @@ section#about .info .conct ul li div {
   align-items: center;
   justify-content: center;
 }
+
 section#about .info .conct ul li .left {
   width: 10%;
   background-color: rgb(221, 234, 237);
@@ -360,31 +371,36 @@ section#about .info .conct ul li .left {
 section#about .info .conct ul li .left i {
   color: var(--bg-section-second);
 }
+
 section#about .info .conct ul li .center {
   justify-content: flex-start;
   width: 80%;
   color: rgb(98, 161, 174);
   background-color: var(--sec-background);
-  
+
 }
+
 section#about .info .conct ul li .center p {
   padding: 1rem;
   font-size: 1.4rem;
   font-weight: 400;
 }
+
 section#about .info .conct ul i {
   font-size: 2.5rem;
 }
+
 section#about .info .conct ul .rith {
   background-color: var(--bg-section-second);
   width: 10%;
   color: var(--sec-background);
 }
+
 /* SETION ABOUT ME END */
 
 
 /* SECTION SKILLS START */
-section#skills .content{
+section#skills .content {
   background-color: var(--first-background-black);
   display: flex;
   flex-direction: column;
@@ -401,9 +417,10 @@ section#skills .content {
   width: 100%;
   margin-bottom: 1rem;
 }
+
 section#skills .content .header {
   width: 80%;
-  
+
   border-bottom: 1px solid var(--sec-background);
   padding: 1rem;
 }
@@ -427,6 +444,7 @@ section#skills .content .desc ul {
 section#skills .content .desc ul li {
   margin: 0.1rem;
 }
+
 section#skills .content .desc ul div.content {
   border: 1px solid var(--sec-background);
   width: 20rem;
@@ -435,13 +453,15 @@ section#skills .content .desc ul div.content {
 }
 
 section#skills .content .desc ul div.content div.nivel {
-  
+
   border: 1px solid rgb(104, 0, 114);
   height: 99%;
   background-color: var(--sec-background);
 }
 
 /* SECTION SKILLS END */
+
+/* SECTION PROJECT START  */
 
 section#project .content {
   display: flex;
@@ -466,7 +486,7 @@ section#project .content .card::before {
   content: 'la';
   background-color: var(--first-background-black);
   opacity: 0.2;
-  color:  var(--first-background-black);
+  color: var(--first-background-black);
   z-index: 10;
 }
 
@@ -482,61 +502,79 @@ section#project .content .card:hover::before {
   color: #fff;
   z-index: 10;
 }
+
+/* SECTION PROJECT END  */
+
 /* SECTION EXPERERIENCE STRAT */
 
 #experence {
   color: var(--first-background-black);
 }
+
 #experence a {
   color: var(--first-background-black);
   font-weight: 500;
-} 
+}
+
 #experence .content {
   width: 100%;
   margin: 0 auto;
- 
+
   margin: 1rem;
   justify-content: center;
-  
+
 }
 
-#experence .content ul li{
+#experence .content ul li {
   display: flex;
-  
+
   align-items: center;
   margin: 1rem;
 }
+
 #experence .content ul li div {
- 
+
   width: 16rem;
- 
+
   display: flex;
   align-items: flex-start;
 }
+
 #experence .content ul li p {
   width: 40rem;
 }
+
 #experence .content ul li div strong {
   margin-bottom: 0.675rem;
 }
+
 /* SECTION EXPERERIENCE END */
 
+/* SECTION CONTACT START  */
 
-section#footer{
+
+
+/* SECTION CONTACT  */
+
+
+/* SECTION FOOTER START  */
+
+section#footer {
   text-align: center;
   color: var(--first-background-black);
 }
+
 section#footer p {
   margin-bottom: 1rem;
 }
+
+/* SECTION FOOTER END  */
+
 /* Medias Queries */
 
 
 /* PC */
-@media only screen and (max-width: 1200px) {
- 
-  
-}
+@media only screen and (max-width: 1200px) {}
 
 /*Tablete */
 @media only screen and (max-width: 1023px) {
@@ -549,40 +587,48 @@ section#footer p {
 @media only screen and (max-width: 767px) {
   #experence .content ul li p {
     width: 80rem;
-   
   }
-  #experence .content ul li{
+
+  #experence .content ul li {
     display: flex;
     justify-content: space-between;
     width: 100%;
- 
+
   }
+
   section#skills .content:last-child .desc ul {
     flex-direction: column;
   }
+
   .container {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
+
   section#about .info {
     flex-wrap: wrap;
   }
+
   section#about .info .date {
     margin: 0 auto;
   }
+
   section#about .info .conct {
     margin: 0 auto;
   }
+
   html {
     font-size: 60%;
     overflow-x: hidden;
   }
+
   #menu {
     position: fixed;
     width: 100vw;
     height: 4rem;
     bottom: 0;
   }
+
   #menu ul {
     display: flex;
     width: 100vw;
@@ -590,6 +636,7 @@ section#footer p {
     height: 4rem;
     background: var(--first-background);
   }
+
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -602,18 +649,21 @@ section#footer p {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
   section#redesSocias ul li i {
     font-size: 2rem;
   }
+
   section#redesSocias ul li {
     width: 4rem;
     height: 4rem;
   }
+
   section#redesSocias ul {
     transform: translateY(4.875rem);
   }
+
   section#redesSocias ul li.single {
-  
     width: 10rem;
     height: 10rem;
   }
