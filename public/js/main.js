@@ -103,6 +103,11 @@ function changeHeaderWhenScroll() {
   
 }
 
+bSettings.addEventListener('click', () => {
+  alert('OK');
+  
+});
+
 window.addEventListener('scroll', () => {
   activateMenuAtCurrentSection();
   changeHeaderWhenScroll();
