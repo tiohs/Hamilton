@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('main section[id]');
+const sections = document.querySelectorAll('section[id]');
 const header = document.querySelector('header');
 const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
 var count = 0;
@@ -64,22 +64,25 @@ function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
   for (const section of sections) {
-    const sectionTop = section.offsetTop
-    const sectionHeight = section.offsetHeight
-    const sectionId = section.getAttribute('id')
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
 
-    const checkpointStart = checkpoint >= sectionTop
-    const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+    const checkpointStart = checkpoint >= sectionTop;
+    const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
 
-    if (checkpointStart && checkpointEnd) {
-      document
-        .querySelector('nav ul li a[href*=' + sectionId + ']')
-        .classList.add('active')
-    } else {
-      document
-        .querySelector('nav ul li a[href*=' + sectionId + ']')
-        .classList.remove('active')
+    if(!!document.querySelector('nav ul li a[href*=' + sectionId + ']')) {
+       if (checkpointStart && checkpointEnd) {
+     document
+       .querySelector('nav ul li a[href*=' + sectionId + ']').parentElement
+         .classList.add('ative')
+     } else {
+       document
+         .querySelector('nav ul li a[href*=' + sectionId + ']').parentElement
+         .classList.remove('ative')
+     }
     }
+   
   }
 }
 
@@ -93,5 +96,6 @@ function changeHeaderWhenScroll() {
 }
 
 window.addEventListener('scroll', () => {
+  activateMenuAtCurrentSection();
   changeHeaderWhenScroll();
 });
