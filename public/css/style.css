@@ -214,7 +214,9 @@ section .header p {
   display: flex;
   align-items: center;
 }
-
+#home .settings i {
+  cursor: pointer;
+}
 #home .settings i:first-child {
   position: absolute;
   right: 1rem;
@@ -223,17 +225,19 @@ section .header p {
   color: var(--first-color-text);
 }
 
+
 #home .settings .show h1 {
-  text-align: left;
+
   color: var(--first-color-text);
   margin-left: 1rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  transform: translateY(-2rem);
 }
 
 #home .settings .show h1 .tep {
   font-size: 3.5rem;
+  text-align: left;
 }
 
 #home .settings .show h1 #typing {
@@ -242,7 +246,7 @@ section .header p {
 #home .settings .show  {
   position: absolute;
   width: 100%;
-  
+  transition: 1s;
 }
 #home .settings .show .menu {
   color: var(--first-color-text);
@@ -253,8 +257,7 @@ section .header p {
   height: 100%;
   transform: translateY(-20px);
   background-color: var(--sec-background);
-  
-  
+  transition: 1s;
 }
 #home .settings .show .menu h3 {
   text-align: center;

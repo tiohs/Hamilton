@@ -30,6 +30,7 @@ const typeWrite = async() =>{
       await sleep(1500);
       while(index > 0)
       {
+        console.log('estou');
         currentLetter = currentWord.slice(0,--index);
         document.querySelector("#typing").textContent = currentLetter;
         await sleep(50);
@@ -42,8 +43,8 @@ const typeWrite = async() =>{
   }
   
 }
-typeWrite();
 
+typeWrite();
 
 
 
@@ -97,15 +98,44 @@ function activateMenuAtCurrentSection() {
 function changeHeaderWhenScroll() {
   if(window.scrollY > 20){
     header.style.display = 'flex';
+    typ();
   } else {
     header.style.display = 'none';
   }
   
 }
 
+function settingsFunction (){
+  settingShow.innerHTML = `   <div class="menu">
+    <h3>Settings</h3>
+    <div class="group">
+       <span>Modo</span>  <i class="fas fa-toggle-off"></i>
+    </div>
+    <div class="group">
+        <span>Languages</span> 
+        <select name="lang" id="lang">
+            <option value="en">En</option>
+            <option value="pt">Pt</option>
+        </select>
+    </div>
+</div>`;
+}
+
+function typ() {
+  settingShow.innerHTML = '<h1 style="text-align: start;"> <span class="tep">></span> <span id="typing"></span>|</h1>';
+}
+
+let state = 0;
 bSettings.addEventListener('click', () => {
-  alert('OK');
-  
+  if(state) {
+    typ();
+    state = 0;
+    typeWrite();
+  } else {
+    settingsFunction();
+    state = 1;
+  }
+
 });
 
 window.addEventListener('scroll', () => {
