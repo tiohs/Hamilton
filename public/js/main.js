@@ -1,3 +1,5 @@
+const sections = document.querySelectorAll('main section[id]');
+const header = document.querySelector('header');
 const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
 var count = 0;
 var index = 0;
@@ -57,7 +59,7 @@ scrollReveal.reveal(
   { interval: 100 }
 );
 
-const sections = document.querySelectorAll('main section[id]')
+
 function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
@@ -80,3 +82,16 @@ function activateMenuAtCurrentSection() {
     }
   }
 }
+
+function changeHeaderWhenScroll() {
+  if(window.scrollY > 0){
+    header.style.display = 'block';
+  } else {
+    header.style.display = 'none';
+  }
+  
+}
+
+window.addEventListener('scroll', () => {
+  changeHeaderWhenScroll();
+});

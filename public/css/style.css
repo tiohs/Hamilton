@@ -9,7 +9,7 @@
   --first-color-text: rgb(21, 111, 119);
   --second-color-text: ;
 
-  --first-background: rgba(232, 243, 246, 0.4);
+  --first-background: rgba(232, 243, 246, 0.979);
   /*Branco */
   --first-background-black: rgba(55, 103, 119, 1);
 
@@ -700,6 +700,7 @@ section#footer p {
   }
 
   #menu {
+    display: none;
     position: fixed;
     width: 100vw;
     height: 4rem;
