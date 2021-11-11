@@ -462,8 +462,11 @@ section#skills .content .desc ul div.content div.nivel {
 /* SECTION SKILLS END */
 
 /* SECTION PROJECT START  */
-
+section#project {
+  color: var(--first-background-black);
+}
 section#project .content {
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -719,6 +722,9 @@ section#footer p {
 
 /* Phones */
 @media only screen and (max-width: 480px) {
+  section#contact form {
+    width: 100%;
+  }
   #experence .content ul li p {
     padding-left: 2rem;
     padding-right: 2rem;
