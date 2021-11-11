@@ -677,11 +677,14 @@ section#contact form button {
 section#footer {
   text-align: center;
   color: var(--first-background-black);
+  padding-bottom: 4rem;
 }
 
 section#footer p {
   margin-bottom: 1rem;
 }
+
+
 
 /* SECTION FOOTER END  */
 
