@@ -95,8 +95,8 @@ function activateMenuAtCurrentSection() {
 }
 
 function changeHeaderWhenScroll() {
-  if(window.scrollY > 0){
-    header.style.display = 'block';
+  if(window.scrollY > 20){
+    header.style.display = 'flex';
   } else {
     header.style.display = 'none';
   }
