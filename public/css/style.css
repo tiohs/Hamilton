@@ -551,8 +551,82 @@ section#project .content .card:hover::before {
 /* SECTION EXPERERIENCE END */
 
 /* SECTION CONTACT START  */
+section#contact {
+  color: var(--first-background-black);
+  font-weight: 200;
+}
+section#contact form {
+  
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sec-background);
+  padding: 2rem;
+}
+
+section#contact form .form {
+ 
+  width: 70%;
+}
+
+section#contact form .group {
+  display: flex;
+  flex-direction: column;
+  
+}
+section#contact form .group:last-child {
+  align-items: center;
+}
 
 
+
+
+section#contact form .group input {
+  padding: 1rem;
+  height: 2rem;
+  font-size: 1rem;
+  border-width: 1px;
+  background-color: var(--sec-background);
+  border-color: var(--first-color-text);
+  color: var(--first-color-text);
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 2rem;
+}
+
+section#contact form .group input::placeholder, section#contact form .group textarea::placeholder {
+  color: var(--first-color-text);
+  font-size: 1rem;
+}
+section#contact form .group input:focus, section#contact form .group textarea:focus {
+  outline: none;
+  border-width: 2px;
+
+}
+
+section#contact form .group textarea {
+  padding: 1rem;
+  background-color: var(--sec-background);
+  border-color: var(--first-color-text);
+  font-size: 1rem;
+  border-width: 1px;
+  color: var(--first-color-text);
+}
+
+section#contact form button {
+  margin-top: 1rem;
+  width: 12rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: var(--sec-background);
+  background-color: var(--first-color-text);
+  border: none;
+}
 
 /* SECTION CONTACT  */
 
