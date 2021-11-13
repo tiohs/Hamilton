@@ -71,7 +71,8 @@ ScrollReveal({
   reset: true
 }).reveal(
   `
-    section#about .info .conct
+  #experence .content,
+  section#about .info .conct
   `,
   { interval: 100 }
 );
