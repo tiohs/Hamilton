@@ -323,7 +323,10 @@ section#redesSocias ul {
   align-items: center;
   transform: translateY(6.875rem);
 }
-
+section#redesSocias ul li a {
+  color: var(--sec-background) ;
+  padding: 1rem;
+}
 section#redesSocias ul li {
   width: 6rem;
   height: 6rem;
@@ -333,8 +336,20 @@ section#redesSocias ul li {
   align-items: center;
   justify-content: center;
   background-color: var(--bg-section-second);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.424);
+  color: var(--sec-background) ;
+  cursor: pointer;
 }
 
+section#redesSocias ul li:hover   {
+  background-color: var(--sec-background);
+  border: 1px solid var(--bg-section-second);
+  color: var(--bg-section-second) ;
+}
+section#redesSocias ul li a:hover  {
+ 
+  color: var(--bg-section-second) ;
+}
 section#redesSocias ul li.single {
 
   width: 14rem;
@@ -350,8 +365,6 @@ section#redesSocias ul li.single img {
 
 section#redesSocias ul li i {
   font-size: 3rem;
-  color: var(--sec-background);
-
 }
 
 /*SECTION SOCIAL */
