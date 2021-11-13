@@ -51,12 +51,11 @@ typeWrite();
 ScrollReveal({
   origin: 'left',
   distance: '30px',
-  duration: 800,
+  duration: 700,
   reset: true
 }).reveal(
   `
     section#about .info div.date,
-    section#about .info .conct,
     section#skills .content .header,
     section#skills .content .desc,
     section#skills .content .desc h4,
@@ -65,7 +64,17 @@ ScrollReveal({
   `,
   { interval: 100 }
 );
-
+ScrollReveal({
+  origin: 'right',
+  distance: '30px',
+  duration: 1000,
+  reset: true
+}).reveal(
+  `
+    section#about .info .conct
+  `,
+  { interval: 100 }
+);
 ScrollReveal({
   origin: 'top',
   distance: '30px',
