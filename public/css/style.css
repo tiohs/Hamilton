@@ -136,7 +136,14 @@ section .header p {
   z-index: 10000;
 }
 
-
+#menu .dowload{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+#menu .dowload i {
+  font-size: 2rem;
+}
 /* changes */
 #menu ul {
   display: flex;
