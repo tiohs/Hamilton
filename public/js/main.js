@@ -48,15 +48,13 @@ typeWrite();
 
 
 
-const scrollReveal = ScrollReveal({
-  origin: 'top',
+ScrollReveal({
+  origin: 'left',
   distance: '30px',
-  duration: 700,
+  duration: 800,
   reset: true
-});
-
-scrollReveal.reveal(
-  ` section#redesSocias ul li,
+}).reveal(
+  `
     section#about .info div.date,
     section#about .info .conct,
     section#skills .content .header,
@@ -64,6 +62,17 @@ scrollReveal.reveal(
     section#skills .content .desc h4,
     section#skills .content .desc ul li,
     section#skills .content .desc ul div.content div.nivel
+  `,
+  { interval: 100 }
+);
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 800,
+  reset: true
+}).reveal(
+  ` section#redesSocias ul li
   `,
   { interval: 100 }
 );

@@ -137,11 +137,21 @@ section .header p {
 }
 
 #menu .dowload{
+  width: 4rem;
+  height: 4rem;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  background-color: var(--first-color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  border-radius: 50%;
+  cursor: pointer;
 }
 #menu .dowload i {
+  color: var(--first-background);
   font-size: 2rem;
 }
 /* changes */
