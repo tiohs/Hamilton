@@ -590,6 +590,18 @@ section#project .content .card {
   z-index: 1;
 }
 
+section#project .content .card .info {
+  background-color: var(--bg-section-primary);
+  position: absolute;
+  height: 0px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  opacity: 0;
+  transition:all 300ms;
+}
+
 section#project .content .card::before {
   position: absolute;
   top: 0;
@@ -603,17 +615,11 @@ section#project .content .card::before {
   z-index: 10;
 }
 
-section#project .content .card:hover::before {
-  position: absolute;
+section#project .content .card:hover .info {
   top: 0;
-  left: 0;
-  width: 100%;
+  opacity: 1;
   height: 100%;
-  content: '';
-  background-color: var(--first-background-black);
-  opacity: 0;
-  color: #fff;
-  z-index: 10;
+  transition: all 300ms;
 }
 
 /* SECTION PROJECT END  */
