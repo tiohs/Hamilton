@@ -365,13 +365,28 @@ section#redesSocias ul li:hover   {
 }
 section#redesSocias ul li a:hover  {
  
-  color: var(--bg-section-second) ;
+  color: var(--bg-section-second);
 }
 section#redesSocias ul li.single {
+  position: relative;
   cursor: zoom-in;
   cursor: -moz-zoom-in;
   width: 14rem;
   height: 14rem;
+}
+
+section#redesSocias ul li.single::before {
+  content: ' ';
+  position: absolute;
+  background-color: var(--bg-section-second);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+section#redesSocias ul li.single:hover:before {
+  opacity: 0.4;
 }
 
 section#redesSocias ul li.single img {
