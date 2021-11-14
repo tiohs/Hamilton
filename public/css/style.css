@@ -706,6 +706,7 @@ section#contact form button {
   color: var(--sec-background);
   background-color: var(--first-color-text);
   border: none;
+  cursor: pointer;
 }
 
 /* SECTION CONTACT  */
