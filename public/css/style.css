@@ -368,7 +368,8 @@ section#redesSocias ul li a:hover  {
   color: var(--bg-section-second) ;
 }
 section#redesSocias ul li.single {
-
+  cursor: zoom-in;
+  cursor: -moz-zoom-in;
   width: 14rem;
   height: 14rem;
 }
