@@ -3,7 +3,7 @@ const header = document.querySelector('header');
 const settingShow = document.querySelector('#show');
 const bSettings = document.querySelector('#aboutMy');
 const formControl = document.querySelectorAll('.form-control');
-const form = document.querySelector('#form');
+const form = document.querySelector('form');
 const email = document.querySelector('.email');
 
 const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
@@ -33,7 +33,6 @@ const typeWrite = async() =>{
       await sleep(1500);
       while(index > 0)
       {
-        console.log('estou');
         currentLetter = currentWord.slice(0,--index);
         document.querySelector("#typing").textContent = currentLetter;
         await sleep(50);
@@ -157,7 +156,52 @@ bSettings.addEventListener('click', () => {
     settingsFunction();
     state = 1;
   }
+});
 
+
+
+// Validation of form
+
+
+function showError(input) {
+  input.classList.add('ative');
+}
+
+function showSuccess(input) {
+  input.classList.remove('ative');
+}
+
+function checkRequired(inputArr) {
+  inputArr.forEach(function (input) {
+    if (input.value.trim() === '') {
+      showError(input);
+      
+    } else {
+      showSuccess(input);
+    }
+  });
+}
+
+function checkEmail(input) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+    
+  } else {
+    showError(input);
+    
+  }
+
+}
+
+// Event listeners
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  checkEmail(email);
+  checkRequired(formControl);
+  if(!document.querySelectorAll('form .ative')[0]) {
+    form.submit();
+  }
 });
 
 window.addEventListener('scroll', () => {
