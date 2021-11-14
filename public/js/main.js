@@ -2,6 +2,9 @@ const sections = document.querySelectorAll('section[id]');
 const header = document.querySelector('header');
 const settingShow = document.querySelector('#show');
 const bSettings = document.querySelector('#aboutMy');
+const formControl = document.querySelectorAll('.form-control');
+const form = document.querySelector('#form');
+const email = document.querySelector('.email');
 
 const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
 
