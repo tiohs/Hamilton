@@ -395,6 +395,27 @@ section#redesSocias ul li.single img {
   border-radius: 50%;
 }
 
+#model {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.651);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+#model .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#model img {
+  width: auto;
+  height: 100%;
+}
 
 section#redesSocias ul li i {
   font-size: 3rem;
