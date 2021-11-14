@@ -5,9 +5,11 @@ const bSettings = document.querySelector('#aboutMy');
 const formControl = document.querySelectorAll('.form-control');
 const form = document.querySelector('form');
 const email = document.querySelector('.email');
+const avatar = document.querySelector('.single');
+const model = document.querySelector('#model');
+
 
 const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
-
 
 var count = 0;
 var index = 0;
@@ -191,7 +193,6 @@ function checkEmail(input) {
     showError(input);
     
   }
-
 }
 
 // Event listeners
@@ -204,6 +205,15 @@ form.addEventListener('submit', function (e) {
   }
 });
 
+// Model 
+
+avatar.addEventListener('click', ()=> {
+  model.style.display = 'block';
+});
+
+model.addEventListener('click', ()=> {
+  model.style.display = 'none';
+});
 window.addEventListener('scroll', () => {
   activateMenuAtCurrentSection();
   changeHeaderWhenScroll();
