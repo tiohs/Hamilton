@@ -668,6 +668,13 @@ section#contact {
   color: var(--first-background-black);
   font-weight: 200;
 }
+
+section#contact a {
+  color: var(--first-background-black);
+  font-weight: 500;
+  cursor: pointer;
+}
+
 section#contact form {
   
   margin: 0 auto;
