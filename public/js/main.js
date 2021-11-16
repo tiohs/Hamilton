@@ -198,10 +198,12 @@ function checkEmail(input) {
 // Event listeners
 form.addEventListener('submit', function (e) {
   e.preventDefault();
+  
   checkEmail(email);
   checkRequired(formControl);
   if(!document.querySelectorAll('form .ative')[0]) {
-    form.submit();
+    alert('Sorry ! Error send message ^_^. Use Whatsapp - 943732999');
+  
   }
 });
 
