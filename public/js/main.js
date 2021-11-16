@@ -76,7 +76,8 @@ ScrollReveal({
 }).reveal(
   `
   #experence .content,
-  section#about .info .conct
+  section#about .info .conct,
+  section#project .content .card
   `,
   { interval: 100 }
 );
