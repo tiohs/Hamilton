@@ -8,6 +8,7 @@
   --second-color: ;
   --first-color-text: rgb(21, 111, 119);
   --first-color-text-dark: #f0f2f4;
+  --sec-color-text-dark: #babec4;
 
   --first-background: rgba(232, 243, 246, 0.979);
   /*Branco */
@@ -33,7 +34,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: var(--first-color-text-dark);
   opacity: 0;
 }
 
@@ -236,6 +237,10 @@ section .header p {
   align-items: center;
 }
 
+.dark #home {
+  background: #0b111ee8;
+}
+
 #home::before {
   display: none;
   content: '';
@@ -257,6 +262,11 @@ section .header p {
   display: flex;
   align-items: center;
 }
+
+.dark #home .settings {
+  background-color: var(--sec-background-dark-content);
+}
+
 #home .settings i {
   cursor: pointer;
 }
@@ -285,6 +295,9 @@ section .header p {
 
 #home .settings .show h1 #typing {
   margin-left: 0.75rem;
+}
+.dark #home .settings .show h1 #typing {
+  color: var(--first-color-text-dark);
 }
 #home .settings .show  {
   position: absolute;
@@ -317,6 +330,11 @@ section .header p {
   background-color: var(--sec-background);
 }
 
+.dark #home .settings .show .menu .group {
+  background-color: var(--sec-background-dark-content);
+  color: var(--first-color-text-dark);
+}
+
 
 #home .settings .show .menu .group strong {
   cursor: pointer;
@@ -326,6 +344,10 @@ section .header p {
   background: none;
   border: none;
   color: var(--first-color-text);
+}
+
+.dark #home .settings .show .menu .group select  {
+  color: var(--sec-color-text-dark);
 }
 #home .down {
   position: absolute;
