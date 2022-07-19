@@ -9,7 +9,7 @@ const avatar = document.querySelector('.single');
 const model = document.querySelector('#model');
 
 
-const texts = ['Hi, I\'m Hamilton Silva','I\'m a programmer','Full Stack ', 'I Like Design'];
+const texts = ['Hi, I\'m Hamilton Silva ','I\'m a programmer','Full Stack ', 'I Like Design'];
 
 var count = 0;
 var index = 0;

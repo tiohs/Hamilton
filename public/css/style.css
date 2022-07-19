@@ -4,16 +4,20 @@
 /* DECLARATION VARS START */
 
 :root {
-  --first-color: ;
+  --first-color: #0b111e;
   --second-color: ;
   --first-color-text: rgb(21, 111, 119);
-  --second-color-text: ;
+  --first-color-text-dark: #f0f2f4;
 
   --first-background: rgba(232, 243, 246, 0.979);
   /*Branco */
   --first-background-black: rgba(55, 103, 119, 1);
 
   --sec-background: #e8f3f6;
+  --sec-background-dark: var(--first-color);
+
+  --sec-background-dark-content: #151c28;
+
   --bg-section-primary: rgba(202, 229, 229, 0.712);
   --bg-section-second: rgb(98, 161, 174);
 
@@ -21,6 +25,26 @@
   --font-media-bold: 550;
 
   --mb-2: 2rem;
+}
+
+/* ======= Scrollbar style =======  */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-section-primary);
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #556a89;
+  opacity: 0;
 }
 
 /* DECLARATION VARS END */
@@ -83,6 +107,10 @@ section.bg2 {
   padding-top: 3rem;
   background: var(--sec-background);
   padding-bottom: 3rem;
+}
+
+.dark section.bg2 {
+  background: var(--sec-background-dark);
 }
 
 h1 {
@@ -515,8 +543,21 @@ section#skills .content {
   justify-content: center;
 }
 
+.dark section#skills .content {
+  background-color: var(--sec-background-dark-content);
+}
+
 section#skills .header {
   color: var(--first-background-black);
+}
+
+
+.dark section#skills p {
+  color: #babec4;
+}
+
+section#skills .content .header {
+  color: var(--first-color-text-dark);
 }
 
 section#skills .content {
