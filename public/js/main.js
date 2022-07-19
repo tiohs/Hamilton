@@ -132,7 +132,7 @@ function settingsFunction (){
   settingShow.innerHTML = `   <div class="menu">
     <h3>Settings</h3>
     <div class="group">
-       <span>Modo</span>  <strong id="theme">🌑</strong>
+       <span>Modo</span>  <strong id="theme"></strong>
     </div>
     <div class="group">
         <span>Languages</span> 
