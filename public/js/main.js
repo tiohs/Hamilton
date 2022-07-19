@@ -133,7 +133,7 @@ function settingsFunction (){
   settingShow.innerHTML = `   <div class="menu">
     <h3>Settings</h3>
     <div class="group">
-       <span>Modo</span>  <i class="fas fa-toggle-off"></i>
+       <span>Modo</span>  <strong>🌑</strong>
     </div>
     <div class="group">
         <span>Languages</span> 

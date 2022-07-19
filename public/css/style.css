@@ -316,8 +316,11 @@ section .header p {
   padding: 1rem;
   background-color: var(--sec-background);
 }
-#home .settings .show .menu .group i {
-  font-size: 1.5rem;
+
+
+#home .settings .show .menu .group strong {
+  cursor: pointer;
+  
 }
 #home .settings .show .menu .group select {
   background: none;
