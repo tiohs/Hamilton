@@ -8,7 +8,6 @@ const email = document.querySelector('.email');
 const avatar = document.querySelector('.single');
 const model = document.querySelector('#model');
 
-
 const texts = ['Hi, I\'m Hamilton Silva ','I\'m a programmer','Full Stack ', 'I Like Design'];
 
 var count = 0;
@@ -133,7 +132,7 @@ function settingsFunction (){
   settingShow.innerHTML = `   <div class="menu">
     <h3>Settings</h3>
     <div class="group">
-       <span>Modo</span>  <strong>🌑</strong>
+       <span>Modo</span>  <strong id="theme">🌑</strong>
     </div>
     <div class="group">
         <span>Languages</span> 
@@ -143,7 +142,13 @@ function settingsFunction (){
         </select>
     </div>
 </div>`;
+  document.querySelector('#theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    
+  });
 }
+
+
 
 function typ() {
   settingShow.innerHTML = '<h1 style="text-align: start;"> <span class="tep">></span> <span id="typing"></span>|</h1>';
