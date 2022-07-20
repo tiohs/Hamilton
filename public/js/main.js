@@ -60,6 +60,7 @@ ScrollReveal({
   `
     section#about .info div.date,
    
+    section#skills .content .desc ul div.content div.nivel
   `,
   { interval: 100 }
 );
