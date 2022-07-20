@@ -845,6 +845,10 @@ section#contact form {
   padding: 2rem;
 }
 
+section#contact form {
+  background-color: var(--sec-background-dark-content);
+}
+
 section#contact form .form {
  
   width: 70%;
