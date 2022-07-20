@@ -59,11 +59,7 @@ ScrollReveal({
 }).reveal(
   `
     section#about .info div.date,
-    section#skills .content .header,
-    section#skills .content .desc,
-    section#skills .content .desc h4,
-    section#skills .content .desc ul li,
-    section#skills .content .desc ul div.content div.nivel
+   
   `,
   { interval: 100 }
 );

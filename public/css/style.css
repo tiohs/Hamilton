@@ -109,6 +109,10 @@ section.bg {
   background-color: var(--bg-section-primary);
 }
 
+.dark section.bg {
+  background-color: var(--sec-background-dark);
+}
+
 section.bg2 {
   padding-top: 3rem;
   background: var(--sec-background);
@@ -128,6 +132,10 @@ h1 {
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.dark h3 {
+  color: var(--first-color-text-dark);
 }
 
 h2 {
@@ -152,6 +160,10 @@ section .header p {
   margin-top: 1rem;
   width: 50%;
   text-align: center;
+}
+
+.dark section .header p {
+  color: var(--sec-color-text-dark);
 }
 
 /* LAYOUT END */
@@ -441,6 +453,10 @@ section#redesSocias ul li {
   cursor: pointer;
 }
 
+.dark section#redesSocias ul li {
+  background-color: var(--sec-background-dark-content);
+}
+
 section#redesSocias ul li:hover   {
   background-color: var(--sec-background);
   border: 1px solid var(--bg-section-second);
@@ -522,9 +538,17 @@ section#about .info h3 {
   color: rgb(98, 161, 174);
 }
 
+.dark section#about .info h3 {
+  color: var(--first-color-text-dark);
+}
+
 section#about .info .date p {
   padding: 1rem;
   text-align: justify;
+}
+
+.dark section#about .info .date p {
+  color: var(--sec-color-text-dark);
 }
 
 section#about .info .conct {
@@ -784,9 +808,15 @@ section#project .content .card:hover .info {
 #experence .content ul li p {
   width: 40rem;
 }
+.dark #experence .content ul li p { 
+  color: var(--sec-color-text-dark);
+}
 
 #experence .content ul li div strong {
   margin-bottom: 0.675rem;
+}
+.dark #experence .content ul li div strong {
+  color: var(--sec-color-text-dark);
 }
 
 /* SECTION EXPERERIENCE END */
