@@ -5,7 +5,7 @@
 
 :root {
   --first-color: #0b111e;
-  --second-color: ;
+  --second-hue: 219;
   --first-color-text: rgb(21, 111, 119);
   --first-color-text-dark: #f0f2f4;
   --sec-color-text-dark: #babec4;
@@ -197,6 +197,12 @@ section .header p {
   opacity: 0.8;
 }
 
+.dark #menu ul {
+  background-color: hsla(var(--second-hue), 32%, 16%, 0.5);
+  backdrop-filter: blur(20px);
+  opacity: 1;
+}
+
 #menu ul li {
   width: 4rem;
   height: 4rem;
@@ -225,6 +231,11 @@ section .header p {
 #menu ul li.ative {
   background-color: var(--first-color-text);
   border-bottom: 1px solid var(--first-background-black);
+}
+
+.dark #menu ul li.ative {
+
+  border-bottom: 1px solid var(--first-background);
 }
 
 #menu ul li.ative a {
@@ -403,7 +414,9 @@ section .header p {
 
 
 /* SECTION SOCIAL */
-
+.dark section#redesSocias {
+  background: #0b111ee8;
+}
 section#redesSocias ul {
   display: flex;
   justify-content: space-between;
