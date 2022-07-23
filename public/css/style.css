@@ -311,9 +311,7 @@ section .header p {
 
 
 #home .settings .show h1 {
-
   color: var(--first-color-text);
-  margin-left: 1rem;
   display: flex;
   align-items: center;
   transform: translateY(-2rem);
