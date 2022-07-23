@@ -73,7 +73,7 @@ ScrollReveal({
   `
   #experence .content,
   section#about .info .conct,
-  section#project .content .card
+  
   `,
   { interval: 100 }
 );
